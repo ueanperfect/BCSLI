@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget_CNN">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>读取数据</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_Next_dataRead_CNN">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>400</y>
+       <width>113</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>下一步</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>200</y>
+       <width>253</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_picPath_CNN">
+        <property name="text">
+         <string>图像读取地址</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_picPath_CNN"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>模型构建</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget_modelStructor_CNN">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>401</width>
+       <height>281</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>新建列</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>节点数量</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>网络层特质1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>网络层特质2</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Add_CNN">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>350</y>
+       <width>61</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_delete_CNN">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>350</y>
+       <width>61</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Next_modelBulid_CNN">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>420</y>
+       <width>113</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>下一步</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>模型训练</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_Next_modelTrain_CNN">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>430</y>
+       <width>113</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>下一步</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>180</y>
+       <width>531</width>
+       <height>95</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_beginTrain_CNN">
+        <property name="text">
+         <string>开始训练</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>迭代次数</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="3" colspan="2">
+       <widget class="QTextBrowser" name="textBrowser_History_CNN"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit_Step_CNN"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>90</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>学习速率</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_lr"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>预测数据</string>
+    </attribute>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>380</y>
+       <width>174</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>关闭</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>170</y>
+       <width>341</width>
+       <height>67</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButton_picTestPath_CNN">
+        <property name="text">
+         <string>选择测试图片文件夹</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_picTestPath_CNN"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_exportLoss">
+        <property name="text">
+         <string>输出loss曲线</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_exportPredictLabel">
+        <property name="text">
+         <string>输出预测label</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
